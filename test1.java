@@ -77,15 +77,16 @@ public class test3 {
         int count = 1;
         char[] arr = str.toCharArray();
         for(int i = 0; i < arr.length; i++){
+            if(count != 1 && arr[i] == c){
+                arr[i] = 0;
+                //arr[i] = ' ';
+            }
             if(count == 1 && arr[i] == c){
                 count++;
             }
-            if(count != 1 && arr[i] == c){
-                arr[i] = ' ';
-            }
         }
         String str2 = new String(arr);
-        str2 = str2.replace(" ", "");
+        // str2 = str2.replace(" ", "");
         return str2;
     }
     public static void main(String[] args){
