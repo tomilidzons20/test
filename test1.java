@@ -92,7 +92,7 @@ public class test3 {
     public static void main(String[] args){
         System.out.println("Podaj napis");
         Scanner in = new Scanner(System.in);
-        String str = in.next();
+        String str = in.nextLine();
         System.out.println("Podaj znak");
         char c = in.next().charAt(0);
         System.out.println(delete(str, c));
